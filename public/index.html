@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="styles/header.css" type="text/css" />
   <link rel="stylesheet" href="styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="styles/tweets.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -40,7 +41,7 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span>tweeter</span>
+    <span>ecks</span>
     <div class="nav-rightside">
       <p><b>Write</b> a new tweet</p>
       <i class="fa-solid fa-angles-down" style="color: #f90101;"></i>
@@ -69,16 +70,18 @@
         </div>
       </form>
     </section>
-    <section id="main-tweets-container">
-      <article>
-        <header>
+
+    <section class="main-tweets-container">
+      <article class="tweets">
+        <header class="tweet-item">
+          <div><img src="https://i.imgur.com/73hZDYK.png"></div>
           <div>Newton</div>
-          <div>@SirIsaac</div>
+          <div><b>@SirIsaac</b></div>
         </header>
-        <div>
-          If i have seen firther it is by standing on the shoulder of giants
+        <div class="tweet-item">
+          <b>If I have seen further it is by standing on the shoulder of giants</b>
         </div>
-        <footer>
+        <footer class="tweet-item">
           <div>
             10 days ago
           </div>
@@ -90,6 +93,32 @@
         </footer>
       </article>
     </section>
+
+    <section class="main-tweets-container">
+      <article class="tweets">
+        <header class="tweet-item">
+          <div><img src="https://i.imgur.com/nlhLi3I.png"></div>
+          <div>Rhoda Jacobs</div>
+          <div><b>@MrsJacobs</b></div>
+        </header>
+        <div class="tweet-item">
+          <b>Hello world!</b>
+        </div>
+        <footer class="tweet-item">
+          <div>
+            10 days ago
+          </div>
+          <div>
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+    </section>
+
+
   </main>
 </body>
+
 </html>
