@@ -1,0 +1,16 @@
+body > header {
+  background-image: url(../images/60-lines.png);
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 120px;
+  height: 400px;
+  width: 100%;
+}
+
+header h2 {
+  margin: 0;
+}
