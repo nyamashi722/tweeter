@@ -1,0 +1,36 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  background: transparent;
+  border: transparent;
+  border-bottom: solid black;
+  resize: none;
+}
+
+div button {
+  background-color: #4056A1;
+  color: white;
+  font-family: 'Bungee', sans-serif;
+}
+
+div output {
+  font-family: 'Bungee', sans-serif;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.over-limit {
+  color: red;
+}
