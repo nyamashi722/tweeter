@@ -8,7 +8,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -30,7 +33,31 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
+main {
   width: 90%;
   background-color: #f4f1ec;
- }
+}
+
+.under-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .under-nav {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 4em;
+  }
+
+  .under-nav > header {
+    align-self: flex-start;
+    height: 25%; 
+    width: 50vw;
+    padding: 1em;
+    margin-top: 10em;
+  }
+}
