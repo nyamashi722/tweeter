@@ -3,13 +3,15 @@
   flex-direction: column;
 }
 
-article {
+article.tweets {
   padding: 20px;
   margin-top: 60px;
   border: solid black;
 }
 
 article.error-box {
+  margin-bottom: 25px;
+  padding: 15px;
   display: none;
   border: solid red;
   color: red;
@@ -18,19 +20,25 @@ article.error-box {
 article.error-box p {
   margin: 0;
   margin-left: 15px;
+
 }
 
 article.tweets:hover {
   box-shadow: 10px 5px 5px rgb(158, 158, 158);
 }
 
-article div.tweet-item
-{
-  padding: 0 20px;
+article.tweets header {
+  display: flex;
+  align-items: center;
 }
 
-article footer.tweet-item
-{
+article.tweets footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid black;
+}
+
+article div.tweet-item, article footer.tweet-item {
   padding: 0 20px;
 }
 
@@ -52,17 +60,6 @@ div.tweet-item p {
   font-weight: bold;
 }
 
-article.tweets header {
-  display: flex;
-  align-items: center;
-}
-
-article.tweets footer {
-  display: flex;
-  justify-content: space-between;
-  border-top: solid black;
-}
-
 footer div {
   margin-top: 10px;
   font-size: .75em;
@@ -82,4 +79,3 @@ footer.tweet-item .fa-heart:hover {
   color: rgb(255, 0, 0);
   cursor: pointer;
 }
-
