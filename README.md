@@ -4,9 +4,9 @@ Tweeter (which I have promptly renamed to Ecks) is a simple, single-page Twitter
 
 ## Screenshots
 
-!["Screenshot of a new tweet being posted"](https://github.com/nyamashi722/tweeter/blob/master/docs/new-tweet.png?raw=true)
-!["Screenshot of the page as seen from a tablet-sized screen"](https://github.com/nyamashi722/tweeter/blob/master/docs/tablet-screen-size-layout.png?raw=true)
-!["Screenshot of error message"](https://github.com/nyamashi722/tweeter/blob/master/docs/error-message.png?raw=true)
+![Screenshot of a new tweet being posted](https://github.com/nyamashi722/tweeter/blob/master/docs/new-tweet.png?raw=true)
+![Screenshot of the page as seen from a tablet-sized screen](https://github.com/nyamashi722/tweeter/blob/master/docs/tablet-screen-size-layout.png?raw=true)
+![Screenshot of error message](https://github.com/nyamashi722/tweeter/blob/master/docs/error-message.png?raw=true)
 
 ## Getting Started
 
