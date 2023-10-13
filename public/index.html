@@ -20,7 +20,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- timeago library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
@@ -39,7 +41,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 </head>
 
 
@@ -48,41 +50,45 @@
   <nav>
     <span>ecks</span>
     <div class="nav-rightside">
-      <p><b>Write</b> a new tweet</p>
+      <p><strong>Write</strong> a new tweet</p>
       <i class="fa-solid fa-angles-down" style="color: #f90101;"></i>
     </div>
   </nav>
-  <header>
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2>Nathan Yamashiro</h2>
-    </div>
-  </header>
+
+  <!--create another section element to contain everything under the nav bar-->
+  <section class="under-nav">
+    <header>
+      <div>
+        <img src="/images/profile-hex.png">
+      </div>
+      <br>
+      <div>
+        <h2>Nathan Y</h2>
+      </div>
+    </header>
 
 
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="new-tweet">
-      <article class="error-box">
-        <i class="fa-solid fa-triangle-exclamation"></i>
-        <p class="error-msg"></p>
-      </article>
-      <h2>Compose Tweet</h2>
-      <form method="POST" action="/tweets/">
-        <label for="tweet-text">What are you humming about?</label>
-        <textarea name="text" id="tweet-text"></textarea>
-        <div>
-          <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+        <article class="error-box">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p class="error-msg"></p>
+        </article>
+        <form method="POST" action="/tweets/">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
 
-    <section class="main-tweets-container"></section>
-  </main>
+      <!--section element to contain tweets dynamically-->
+      <section class="main-tweets-container"></section>
+    </main>
+  </section>
 </body>
 
 </html>
