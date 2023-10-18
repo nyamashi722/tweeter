@@ -83,7 +83,7 @@ $(document).ready(function () {
 
   // fetches the tweet data from the url
   const loadTweets = function () {
-    $.ajax("http://localhost:8080/tweets", { method: "GET" })
+    $.ajax("/tweets", { method: "GET" })
       .then(function (data) {
         $(".main-tweets-container").empty();
         renderTweets(data);
